@@ -1,9 +1,0 @@
-package com.telusko.app;
-
-public class LaptopRespository {
-	
-	public void save() {
-		
-	}
-
-}

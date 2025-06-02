@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author gauta
- *
- */
-module abstraction {
-}

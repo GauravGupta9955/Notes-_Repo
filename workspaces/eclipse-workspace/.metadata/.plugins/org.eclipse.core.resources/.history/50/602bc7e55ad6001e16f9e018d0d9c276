@@ -1,9 +1,0 @@
-package Inheritance;
-
-public class PavanCalc {
-
-	public PavanCalc() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

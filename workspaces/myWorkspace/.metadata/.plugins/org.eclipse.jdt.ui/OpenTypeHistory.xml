@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=FirstFilterApp/C:\/Tomcat 9.0\/lib\/servlet-api.jar=/javadoc_location=/https:\/\/javaee.github.io\/javaee-spec\/javadocs\/=/=/owner.project.facets=/jst.web=/&lt;javax.servlet.http(HttpFilter.class[HttpFilter" modifiers="1057" timestamp="1733428228000"/>
-    <typeInfo handle="=CustomizeRequestApp/C:\/Tomcat 9.0\/lib\/servlet-api.jar=/javadoc_location=/https:\/\/javaee.github.io\/javaee-spec\/javadocs\/=/=/owner.project.facets=/jst.web=/&lt;javax.servlet.http(HttpServletRequestWrapper.class[HttpServletRequestWrapper" modifiers="33" timestamp="1733428228000"/>
-    <typeInfo handle="=JDBCCRUDApp/src&lt;in.ineuron.controller{IStudentController.java[IStudentController" modifiers="513" timestamp="1744620455676"/>
-    <typeInfo handle="=JDBCCRUDApp/src&lt;in.ineuron.DAO{IStudentDAO.java[IStudentDAO" modifiers="513" timestamp="1744620511889"/>
-    <typeInfo handle="=JDBCCRUDApp/src&lt;in.ineuron.service{IStudentService.java[IStudentService" modifiers="513" timestamp="1744620522438"/>
-</typeInfoHistroy>

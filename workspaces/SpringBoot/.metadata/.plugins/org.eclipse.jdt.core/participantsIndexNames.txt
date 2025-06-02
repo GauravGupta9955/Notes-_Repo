@@ -1,5 +1,0 @@
-INDEX VERSION 1.134
-E:\workspaces\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\155991849.index
-\JobApplication\src\main\java
-E:\workspaces\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3539749884.index
-\ExampleSecurity\src\main\java

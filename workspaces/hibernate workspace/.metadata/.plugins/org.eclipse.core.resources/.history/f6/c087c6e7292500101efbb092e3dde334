@@ -1,5 +1,0 @@
-package com.telusko.SpringJDBCEx.dao;
-
-public class RowMap {
-
-}

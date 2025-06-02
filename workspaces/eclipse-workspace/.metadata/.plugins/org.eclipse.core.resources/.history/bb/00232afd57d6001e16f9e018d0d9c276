@@ -1,9 +1,0 @@
-package Inheritance;
-
-public class AkashCalc {
-
-	public AkashCalc() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;ProjectWithOutMaven&apos;" deleteContents="false" description="Delete resource &apos;ProjectWithOutMaven&apos;" element1="/ProjectWithOutMaven" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1746282988316"/>&#x0A;<refactoring comment="Delete resource &apos;SpringMVCDemo/src/main/resources/application.properties&apos;" deleteContents="false" description="Delete resource &apos;SpringMVCDemo/src/main/resources/application.properties&apos;" element1="/SpringMVCDemo/src/main/resources/application.properties" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1746283843320"/>
-</session>

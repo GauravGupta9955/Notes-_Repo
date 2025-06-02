@@ -1,7 +1,0 @@
-package com.telusko.model;
-
-public class Laptop {
-	public void compile() {
-		System.out.println("Compiling in laptop....");
-	}
-}
