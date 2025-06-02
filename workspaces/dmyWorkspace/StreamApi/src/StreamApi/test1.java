@@ -1,0 +1,27 @@
+package StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+
+public class test1 {
+	public static void main(String[] args) {
+		
+		  List<Integer> arr=List.of(2,3,5,-1,-5,-6,-9,1,4,-4,-11,12,13); 
+			/*
+			 * String output=arr.stream().map(String::valueOf).
+			 * filter(s->s.chars().allMatch(a->(Character.isDigit(a)))).collect(Collectors.
+			 * joining(","));
+			 * 
+			 * System.out.println(output);
+			 */
+		 
+		
+		
+		
+		
+	}
+}

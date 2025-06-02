@@ -1,0 +1,18 @@
+import java.util.*;
+public class collect1 {
+public static void main(String[] args) {
+	List l =new ArrayList();
+	l.add(30);
+	l.add(40);
+	l.add(20);
+	l.add(50);
+	System.out.println(l);
+	
+	Iterator la =l.iterator();
+    
+	while(la.hasNext()) {
+		System.out.println(la.next());
+	}
+	
+}
+}

@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Test1234  {
+	
+	
+	public static void main(String[] args) 
+	{
+		List <Integer> num = Arrays.asList(3,4,5,6,9,11,9,0);
+		Collections.sort(num);
+		System.out.println(num);
+		int length = num.size()-1;
+		int sum = num.indexOf(length)*num.indexOf(length-1);
+	
+	System.out.println(sum);	
+		
+		
+	}
+	
+
+	
+
+	
+}
+

@@ -1,0 +1,23 @@
+package CodingQuestion;
+
+public class ToFindTheGCDOfTwoNumber {
+	public static void main(String[] args) {
+		Integer input=6;
+		Integer input2=3;
+		
+		Integer GCD =GCDofTwoNumber(input,input2);
+		System.out.println("GCD of two number is"+GCD);
+	}
+
+	private static Integer GCDofTwoNumber(Integer input, Integer input2) {
+		// TODO Auto-generated method stub
+		
+		while(input2!=0) {
+			int temp=input2;
+			input2=input%input2;
+			input=temp;
+		}
+		return input;
+	}
+
+}

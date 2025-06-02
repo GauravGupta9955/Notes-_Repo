@@ -1,0 +1,32 @@
+package com.Telusko.Spring1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import Config.AppConfig;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{  
+    public static void main( String[] args )
+    {
+    	
+    	
+    	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    	Alien obj1=context.getBean(Alien.class);
+    	obj1.code();
+    	
+    	
+    	
+		/*
+		 * ApplicationContext context = new
+		 * ClassPathXmlApplicationContext("resources\\spring.xml"); Alien obj =
+		 * context.getBean("alien",Alien.class); System.out.println(obj.getAge());
+		 * obj.code();
+		 */
+    }
+}

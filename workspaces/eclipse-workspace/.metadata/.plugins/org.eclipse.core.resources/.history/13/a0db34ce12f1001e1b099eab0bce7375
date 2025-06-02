@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Count {
+
+	public String firstLetterCount(String myString) {
+		String myString1 = new String(" ");
+		int i = myString.length() - 1;
+		for (int k = 0; k <= i; k++) {
+			if (myString.charAt(k) == myString.charAt(0)) {
+				myString1 = myString1 + myString.charAt(k);
+			} else {
+				myString1 = myString1 + myString.charAt(k);
+			}
+		}
+		return myString1;
+	}
+
+	public String SecondLetterCount(String yourString) {
+		String yourString1 = new String(" ");
+
+		int i = yourString.length() - 1;
+		for (int k = 0; k <= i; k++) {
+			if (yourString.charAt(k) == yourString.charAt(0)) {
+				yourString1 = yourString1 + yourString.charAt(k);
+			} else {
+				yourString1 = yourString1 + yourString.charAt(k);
+			}
+		}
+		return yourString1;
+	}
+}
+
+public class testString {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String myString = sc.next();
+		String yourString = sc.next();
+
+		int sum = myString.length() + yourString.length();
+		System.out.println(sum);
+		if (myString.compareTo(yourString) <= 1)
+			System.out.println("No");
+		else
+			System.out.println("Yes");
+
+		Count count1 = new Count();
+		String myString1 = count1.firstLetterCount(myString);
+		String yourString1 = count1.SecondLetterCount(yourString);
+
+		String concatSum = myString1 + yourString1;
+		System.out.println(concatSum);
+	}
+}

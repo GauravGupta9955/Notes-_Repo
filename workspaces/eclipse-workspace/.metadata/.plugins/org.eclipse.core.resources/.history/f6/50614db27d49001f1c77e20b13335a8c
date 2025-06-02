@@ -1,0 +1,17 @@
+@FunctionalInterface
+interface classa{
+	int add(int i,int j);
+}
+public class LambdaNew1 {
+	public static void main(String[] args) {
+		classa B= 
+			( k,m) ->{
+				return m+k;
+			};
+		
+		
+		System.out.println(B.add(5,6));
+		
+	}
+
+}

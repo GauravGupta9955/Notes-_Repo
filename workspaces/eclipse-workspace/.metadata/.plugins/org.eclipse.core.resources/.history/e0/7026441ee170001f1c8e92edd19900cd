@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Polidrome {
+    public static void main(String[] args) {
+        
+    Scanner sc =new Scanner(System.in);
+	String str =sc.next();
+	String str1=str.replaceAll("\\s"," ");
+	String str2 =str1.toLowerCase();
+	boolean isPolindrome =isPolindrom(str2);
+	if(isPolindrome) {
+		System.out.println("Polidrom");
+	}
+	else
+		System.out.println("Not Polidrom");
+    }
+    
+    private static Boolean isPolindrom(String str){
+       String str1 ="";
+       int length =str.length()-1;
+       
+       for(int i=length;i>=0;i--){
+           str1 =str1+str.charAt(i);
+       }
+       
+       if(str1.equals(str)){
+           return true;
+       }
+       else{ return false;}
+        
+    }
+}

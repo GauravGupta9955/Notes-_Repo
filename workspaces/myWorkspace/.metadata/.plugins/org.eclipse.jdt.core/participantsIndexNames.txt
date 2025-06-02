@@ -1,0 +1,17 @@
+INDEX VERSION 1.134
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1609575774.index
+\JSP-03\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3499436069.index
+\RequestForwardApp\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2345450905.index
+\JSP-01\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3132910146.index
+\jsp-2\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2137149717.index
+\JSP-04\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3362722598.index
+\JSP1.0\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2847841342.index
+\JSTLApp-01\src\main\java
+E:\workspaces\myWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1796438313.index
+\JSP1.0\src\main\java

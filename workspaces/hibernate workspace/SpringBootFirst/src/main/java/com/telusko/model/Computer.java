@@ -1,0 +1,7 @@
+package com.telusko.model;
+
+public interface Computer {
+	
+	void compile();
+
+}

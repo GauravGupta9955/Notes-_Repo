@@ -1,0 +1,41 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.mysql.cj.jdbc.Driver;
+
+public class IdustryWay {
+public static void main(String[] args) {
+
+	String url = "jdbc:mysql://localhost:3306/ineuron";
+	String username = "root";
+	String password = "Gaurav45";
+	try {
+	Connection connection = DriverManager.
+			getConnection(url, username, password);
+	if(connection!=null) {
+		Statement statement = connection.createStatement();
+		if(statement!=null) {
+			String sqlSelectQuery ="select sid,sname,sage,saddr from Student";
+			ResultSet resultSet = statement.executeQuery(sqlSelectQuery);
+			while(resultSet.next()){
+				Integer id = resultSet.getInt(1);
+				String name = resultSet.getString(2);
+				Integer age = resultSet.getInt(3);
+				String team = resultSet.getString(4);
+				System.out.println(id+"\t"+name+"\t"+age+"\t"+team);
+				}
+			
+			connection.close();
+			System.out.println("Closing the connection...");
+			
+		}
+	}
+	}
+	catch(SQLException se){
+		se.printStackTrace();
+	}
+}
+}

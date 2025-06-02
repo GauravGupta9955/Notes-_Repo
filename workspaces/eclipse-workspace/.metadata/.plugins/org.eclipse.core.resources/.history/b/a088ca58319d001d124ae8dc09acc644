@@ -1,0 +1,14 @@
+package code;
+class Laptop{
+	String model;
+	int price;
+}
+public class Object {
+public static void main(String[] args) {
+	Laptop obj =new Laptop();
+	obj.model="Apple";
+	obj.price="30000";
+	System.out.println(obj.toString());
+	
+}
+}

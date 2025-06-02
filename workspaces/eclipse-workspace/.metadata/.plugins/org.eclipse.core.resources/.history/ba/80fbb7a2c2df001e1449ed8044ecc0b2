@@ -1,0 +1,16 @@
+class car{
+	public void show() {
+		System.out.println("in a Show");
+	}
+}
+public class AnonymousInnerClass {
+ public static void main(String[] args) {
+	car A =new car()
+	{
+		public void show() {
+			System.out.println("in a new Show");
+		}	
+	};
+	A.show();
+}
+}

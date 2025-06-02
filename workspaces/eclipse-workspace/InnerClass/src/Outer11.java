@@ -1,0 +1,19 @@
+
+public class Outer11 {
+	int x =1000;
+	class inner11{
+		int x =100;
+		public void m1() {
+			int x =10;
+			System.out.println(x);
+			System.out.println(this.x);
+			System.out.println(Outer11.this.x);
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println("Outer method");
+		new Outer11().new inner11().m1();
+		
+	}
+
+}

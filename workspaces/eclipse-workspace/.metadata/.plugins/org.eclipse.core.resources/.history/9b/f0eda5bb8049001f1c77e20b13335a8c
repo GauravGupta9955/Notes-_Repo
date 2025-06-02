@@ -1,0 +1,27 @@
+class Alien{
+	private final int id;
+	private final String name;
+	public Alien(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	@Override
+	public String toString() {
+		return "Alien [id=" + id + ", name=" + name + "]";
+	}
+	
+}
+public class RecordClass {
+	public static void main(String[] args) {
+		Alien a1 = new Alien(1,"gaurav");
+		System.out.println(a1);
+	}
+
+}

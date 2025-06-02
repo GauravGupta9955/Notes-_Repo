@@ -1,0 +1,15 @@
+127.0.0.1 - - [21/Feb/2025:13:27:53 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [21/Feb/2025:13:34:43 +0530] "GET /RequestForwardApp/index.html HTTP/1.1" 200 551
+127.0.0.1 - - [21/Feb/2025:13:34:43 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [21/Feb/2025:13:35:10 +0530] "GET /RequestForwardApp/index.html HTTP/1.1" 200 552
+127.0.0.1 - - [21/Feb/2025:13:35:10 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [21/Feb/2025:13:35:12 +0530] "POST /RequestForwardApp/test1 HTTP/1.1" 404 778
+127.0.0.1 - - [21/Feb/2025:13:35:12 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [21/Feb/2025:13:35:20 +0530] "POST /RequestForwardApp/test1 HTTP/1.1" 404 778
+127.0.0.1 - - [21/Feb/2025:13:36:03 +0530] "POST /RequestForwardApp/test1 HTTP/1.1" 404 778
+127.0.0.1 - - [21/Feb/2025:13:36:18 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [21/Feb/2025:13:36:29 +0530] "GET /RequestForwardApp/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [21/Feb/2025:13:36:35 +0530] "POST /RequestForwardApp/test1 HTTP/1.1" 405 752
+127.0.0.1 - - [21/Feb/2025:13:37:15 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [21/Feb/2025:13:37:21 +0530] "GET /RequestForwardApp/index.html HTTP/1.1" 200 551
+127.0.0.1 - - [21/Feb/2025:13:37:47 +0530] "GET /RequestForwardApp/test1?username=sachin&password=tendulkar HTTP/1.1" 200 168

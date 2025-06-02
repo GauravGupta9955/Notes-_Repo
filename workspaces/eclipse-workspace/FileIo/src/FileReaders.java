@@ -1,0 +1,16 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReaders {
+public static void main(String[] args) throws IOException {
+	FileReader fr = new FileReader("C:\\Users\\gauta\\eclipse-workspace\\FileIo\\info.txt");
+	int a =fr.read();
+	while(a!=-1) {
+		System.out.print((char)a);
+		a=fr.read();
+	}
+	fr.close();
+	
+}
+}

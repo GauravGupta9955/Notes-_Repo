@@ -1,0 +1,14 @@
+package javaString;
+
+public class Mutable1 {
+	public static void main(String[] args) {
+		final StringBuffer s1 =new StringBuffer();
+		System.out.println(s1.capacity());
+		StringBuffer s2 =new StringBuffer("sachin");
+		s2.append("tendulkar");
+		System.out.println(s2.capacity());
+		  
+	}
+
+}
+ 

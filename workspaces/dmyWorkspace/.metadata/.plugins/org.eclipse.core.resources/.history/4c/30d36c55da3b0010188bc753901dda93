@@ -1,0 +1,54 @@
+package com.factoryDesignPattern;
+
+
+
+
+
+
+//Concrete Factory method
+class DevopsFactory implements Factory{
+
+	@Override
+	public Company FactoryMethod() {
+		// TODO Auto-generated method stub
+		return new Agency1();
+	}
+	
+}
+//Concrete Factory method
+class FrontendFactory implements Factory{
+
+	@Override
+	public Company FactoryMethod() {
+		// TODO Auto-generated method stub
+		return new Agency3();
+	}
+	
+}
+class javaFactory implements Factory{
+
+	@Override
+	public Company FactoryMethod() {
+		// TODO Auto-generated method stub
+		return new Agency2();
+	}
+	
+}
+public class FactoryDesignPattern {
+	public static void main(String[] args) {
+		Factory devops = new DevopsFactory();
+		Company com1=devops.FactoryMethod();
+		com1.Employee();
+		
+		Factory java = new javaFactory();
+		Company com2=java.FactoryMethod();
+		com2.Employee();
+		
+		Factory Frontend  = new FrontendFactory();
+		Company com3=Frontend.FactoryMethod();
+		com3.Employee();
+		
+		
+	}
+
+}

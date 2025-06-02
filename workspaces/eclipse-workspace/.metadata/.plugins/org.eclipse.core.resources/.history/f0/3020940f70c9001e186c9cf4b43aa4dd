@@ -1,0 +1,19 @@
+package javaString;
+
+public class Mutable1 {
+	public static void main(String[] args) {
+		StringBuffer s1 =new StringBuffer("GauravKumarGupta");
+		StringBuffer s2 =new StringBuffer();
+		s1.trimToSize();
+		int j=s1.length();
+		for(int i=j;i>=0;i--) {
+			s2.append(s1.charAt(i));
+		}
+		System.out.println(s2);
+		
+		
+		  
+	}
+ 
+}
+ 

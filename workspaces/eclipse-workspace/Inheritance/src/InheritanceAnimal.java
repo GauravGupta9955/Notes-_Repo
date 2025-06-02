@@ -1,0 +1,66 @@
+class Animal{
+	public void eat() {
+		System.out.println("Animal Eats food");
+	}
+	
+	public void sleep() {
+		System.out.println("Animal sleeps early");
+	}
+}
+
+class Tiger extends Animal{
+	public void eat() {
+		System.out.println("Tiger hunts and Eats food");
+	}
+	
+	public void sleep() {
+		System.out.println("Tiger sleeps early");
+	}
+}
+
+class Monkey extends Animal{
+	public void eat() {
+		System.out.println("Monkey Steels and Eats food");
+	}
+	
+	public void sleep() {
+		System.out.println("Monkey sleeps early");
+	}
+}
+
+class Deer extends Animal{
+	public void eat() {
+		System.out.println("Deer graze and Eats food");
+	}
+	
+	public void sleep() {
+		System.out.println("Dear sleeps under the tree");
+	}
+}
+
+class Forest{
+	public void call(Animal ap) {
+		ap.eat();
+		ap.sleep();
+	}
+}
+public class InheritanceAnimal {
+	
+   public static void main(String[] args) {
+	
+	   Tiger tg = new Tiger();
+	   Monkey my =new Monkey();
+	   Deer dr =new Deer();
+	   
+	   Forest fr =new Forest();
+	   fr.call(tg);
+	   System.out.println(" ");
+	   fr.call(my);
+	   System.out.println(" ");
+	   fr.call(dr);
+	   
+}
+
+	
+
+}

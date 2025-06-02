@@ -1,0 +1,12 @@
+import java.util.*;
+import java.util.function.Predicate;
+
+public class test12 {
+	
+ 
+public static void main(String[] args) {
+	Predicate<Integer> f =i->i%2==1;
+	System.out.println("The given no 20 is even "+f.test(20));
+	System.out.println("The given no 35 is even "+f.test(35));
+}
+}

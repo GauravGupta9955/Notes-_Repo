@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class mAP1 {
+public static void main(String[] args) {
+	HashMap hm =new HashMap();
+	hm.put(10, "sachin");
+	hm.put(7, "dhoni");
+	hm.put(18, "kohli");
+	hm.put(45, "rohit");
+	Set s = hm.keySet();
+	Collection c = hm.values();
+	
+	System.out.println(s);
+	System.out.println(hm);
+	System.out.println(c);
+	}
+}
+}

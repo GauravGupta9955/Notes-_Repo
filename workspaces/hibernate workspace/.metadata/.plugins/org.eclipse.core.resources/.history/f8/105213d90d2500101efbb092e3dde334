@@ -1,0 +1,16 @@
+package com.telusko.app.repo;
+
+import org.springframework.stereotype.Repository;
+
+import com.telusko.app.model.Laptop;
+
+@Repository
+public class LaptopRepository {
+
+
+	public void save(Laptop lap) {
+		// TODO Auto-generated method stub
+		System.out.println("saved in database");
+	}
+
+}

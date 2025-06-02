@@ -1,0 +1,21 @@
+package javavenger;
+class Human{
+	private int age=15;
+	private String name="Gaurav";
+	
+	public int getAge() {
+		return age;
+	}
+	public String getname() {
+		return name;
+	}
+}
+public class encapsulation {
+public static void main(String[] args) {
+	Human obj1 =new Human();
+	int age =obj1.getAge();
+	String name=obj1.getname();
+	System.out.println(age);
+	System.out.println(name);
+}
+}

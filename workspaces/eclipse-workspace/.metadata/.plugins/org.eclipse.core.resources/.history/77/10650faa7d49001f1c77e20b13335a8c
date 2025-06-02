@@ -1,0 +1,13 @@
+
+public class countmap {
+	public static void main(String[] args) {
+		String str = "Pneumonoultramicroscopicsilicovolcanoconiosis"; // lung disease
+		getOccuringChar(str);
+	}
+
+	static void getOccuringChar(String str) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

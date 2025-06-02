@@ -1,0 +1,20 @@
+package javaString;
+
+public class Mutable1 {
+	public static void main(String[] args) {
+		String s1 =new String("GauravKumarGupta");
+		String s2 =new String(" ");
+		
+		int j=s1.length();
+		int k=j-1;
+		for(int i=k;i>=0;i--) {
+			s2=s2+s1.charAt(i);
+		}
+		System.out.println(s2);
+		
+		
+		  
+	}
+ 
+}
+ 

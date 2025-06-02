@@ -1,0 +1,25 @@
+package com.JPA.test;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.JPA.test.entity.User;
+import com.JPA.test.repository.UserRepository;
+
+@SpringBootApplication
+public class BootJpaTestApplication {
+
+   
+	public static void main(String[] args) {
+		ApplicationContext context =SpringApplication.run(BootJpaTestApplication.class, args);
+		UserRepository userRepository=context.getBean(UserRepository.class);
+		List<User> optional=userRepository.findByCity("Ranchi");
+		optional.forEach(System.out::print);
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		ArrayList al1 =new ArrayList();
+		al1.add("ineuron");
+		al1.add("B");
+		al1.add(4);
+		al1.add(25.5);
+		System.out.println(al1);
+	}
+}

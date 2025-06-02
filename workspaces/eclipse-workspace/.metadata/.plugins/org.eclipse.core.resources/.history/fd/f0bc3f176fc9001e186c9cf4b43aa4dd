@@ -1,0 +1,15 @@
+package javaString;
+
+public class Mutable1 {
+	public static void main(String[] args) {
+		StringBuffer s1 =new StringBuffer("GauravKumarGupta");
+		StringBuffer s2 =new StringBuffer();
+		s2=s1;
+		System.out.println(s2);
+		
+		
+		  
+	}
+ 
+}
+ 

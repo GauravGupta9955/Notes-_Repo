@@ -1,0 +1,24 @@
+import java.util.*;
+public class convertMapintoCollection {
+public static void main(String[] args) {
+	HashMap hm = new HashMap();
+	hm.put(10, "aman");
+	hm.put(12, "gautam");
+	hm.put(13, "rupa");
+	hm.put(14, "ruby");
+	
+	Set s = hm.entrySet();
+	System.out.println(s.getClass().getName());
+	
+	Iterator itr=s.iterator();
+	while (itr.hasNext()) {
+		Map.Entry data= (Map.Entry) itr.next();
+		System.out.println(data.getKey()+":"+data.getValue());
+		if(data.getKey().equals(10)) {
+			data.setValue("bhunda");
+		}
+	}
+	System.out.println(hm); 
+	
+}
+}
