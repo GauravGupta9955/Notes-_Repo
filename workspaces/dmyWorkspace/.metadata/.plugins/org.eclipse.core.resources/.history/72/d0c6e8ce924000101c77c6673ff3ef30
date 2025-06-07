@@ -1,0 +1,72 @@
+package StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+class Employee123{
+	int salary;
+	String name;
+	String department;
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	public Employee123(int salary, String name, String department) {
+		super();
+		this.salary = salary;
+		this.name = name;
+		this.department = department;
+	}
+	public Employee123() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Employee123 [salary=" + salary + ", name=" + name + ", department=" + department + "]";
+	}
+	
+}
+
+
+public class test1 {
+	public static void main(String[] args) {
+		ArrayList<Employee123> arr = new ArrayList<Employee123>();
+		arr.add(new Employee123(50000,"Gaurav","Computer science"));
+		arr.add(new Employee123(55000,"Gautam","Electrical Engineering"));
+		arr.add(new Employee123(65000,"Rahul","Electronics Engineering"));
+		arr.add(new Employee123(25000,"Raman","Data sciene"));
+		arr.add(new Employee123(35000,"Ashwat","Mechanical Engineering"));
+		arr.add(new Employee123(75000,"Raghav","Electrical Engineering"));
+		
+		List<Employee123> arr12=arr.stream().filter(a->a.getSalary()>50000).collect(Collectors.toList());
+		System.out.println(arr12);
+		Map<String, List<Employee123>> arr122=arr.stream().collect(Collectors.groupingBy(Employee123::getDepartment));
+	    arr122.entrySet().stream().forEach(System.out::print);
+	
+	}
+	
+
+}

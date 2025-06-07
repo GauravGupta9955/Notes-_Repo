@@ -1,0 +1,28 @@
+package CodingQuestion;
+//String=aabbsddefffcc"
+//output=aa,bb,dd,fff,cc
+public class TocheckiftheStringhasrepeatingCharacter {
+	public static void main(String[] args) {
+		String input="aabbsddefffcc";
+		StringBuilder str = new StringBuilder();
+		int k=0;
+		for(int i=0;i<input.length();i++) {
+			while(k<input.length()) {
+				if(input.charAt(i)==input.charAt(k)) {
+					k++;
+				}
+				else {
+					if(i+1!=k)
+					str.append(input.substring(i, k));
+					str.append(",");
+					i=k;
+				}
+				
+					
+			}
+		}
+		
+		System.out.println(str.toString());
+	}
+
+}

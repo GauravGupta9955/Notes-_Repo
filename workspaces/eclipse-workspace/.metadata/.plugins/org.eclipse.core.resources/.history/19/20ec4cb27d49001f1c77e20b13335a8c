@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class palindrome {
+	 static{
+	        Scanner sc =new Scanner(System.in);
+	        int breadth =sc.nextInt();
+	        int height =sc.nextInt();
+	        area(breadth,height);
+	    }
+
+	    public static void area(int breadth, int height ) {
+	        
+	        if(breadth<0 || height<0) {
+	        System.out.println("java.lang.Exception: Breadth and height must be positive");
+	        }
+	        else {
+	        System.out.println(height*breadth);
+	        }
+	    }
+	    
+	     public static void main(String[] args){
+	         
+	     }
+}

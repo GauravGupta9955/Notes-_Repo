@@ -1,0 +1,13 @@
+import java.util.*;
+
+@FunctionalInterface
+interface sum{
+	int sum(int a,int b);
+}
+public class test12{
+	public static void main(String[] args) {
+		sum a=(c,b)->c+b;
+		System.out.println(a.sum(5, 6));
+	}
+	
+}

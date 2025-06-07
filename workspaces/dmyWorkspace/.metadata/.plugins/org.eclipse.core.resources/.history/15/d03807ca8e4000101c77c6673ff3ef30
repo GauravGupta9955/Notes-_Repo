@@ -1,0 +1,25 @@
+package StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+
+
+public class test1 {
+	public static void main(String[] args) {
+		
+		List<String>arr=List.of("main","Gaurav","Rahul");
+		String str=arr.stream().map(String::toLowerCase).collect(Collectors.joining(" "));
+	    System.out.println(str);
+	}
+	
+
+}

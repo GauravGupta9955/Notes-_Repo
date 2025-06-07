@@ -1,0 +1,46 @@
+import java.util.*;
+
+class Student{
+	private String name;
+	private int age;
+	private int rollno ;
+	
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", rollno=" + rollno + "]";
+	}
+
+	public Student(String name, int age, int rollno) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.rollno = rollno;
+	}
+	
+}
+class SortbyAge implements Comparator<Student>{
+	@Override
+	public int compare(Student o1, Student o2) {
+		// TODO Auto-generated method stub
+		return o1.age() -o2.age();
+	}
+}
+public class Test1234  implements Comparator<Student> {
+	public static void main(String[] args) {
+		ArrayList<Student> a = new ArrayList<>();
+		a.add(new Student("Gaurav kumar",27,16));
+		a.add(new Student("Gautam kumar",24,13));
+		a.add(new Student("saurav kumar",21,15));
+		a.add(new Student("Rahul kumar",23,13));
+		
+		Comparator <Student> com= new SortbyAge();
+		
+		Collections.sort(a,com); 
+		System.out.println(a);
+	}
+
+	
+
+	
+
+}

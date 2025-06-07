@@ -1,0 +1,14 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class BufferReader {
+public static void main(String[] args) throws FileNotFoundException {
+	BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\gauta\\eclipse-workspace\\FileIo"));
+    String line =br.readLine();
+    while (line!= -1) {
+    	System.out.println(line);
+    	line =br.readLine();
+    }
+}
+}

@@ -1,0 +1,40 @@
+package StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+
+
+public class test1 {
+	public static void main(String[] args) {ArrayList<Integer> arr = new ArrayList<Integer>();
+	arr.add(10);
+	arr.add(15);
+	arr.add(13);
+	arr.add(19);
+	arr.add(160);
+	arr.add(15);
+	arr.add(14);
+	arr.add(25);
+	arr.add(39);
+	arr.add(1);
+	arr.add(3);
+	
+	int max=arr.stream().max(Integer::compare).get();
+	
+	int min=arr.stream().min(Integer::compare).get();
+	
+	
+	
+	}
+	
+
+}

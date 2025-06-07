@@ -1,0 +1,12 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Strmap {
+public static void main(String[] args) {
+	 List<Integer> nums = Arrays.asList(6,5,2,8,1,7);
+	 
+	Stream<Integer> stream =nums.stream();
+	stream.forEach(n->System.out.println(n));
+}
+}

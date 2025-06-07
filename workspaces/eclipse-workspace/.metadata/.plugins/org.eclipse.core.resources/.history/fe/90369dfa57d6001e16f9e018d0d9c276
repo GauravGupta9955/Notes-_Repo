@@ -1,0 +1,20 @@
+package Inheritance;
+
+class AkashCalc{
+	public int add(int num1 , int num2) {
+		int num3 =num1+num2;
+		return num3;
+	}
+}
+
+public class Inheritance1 {
+ 
+	
+	public static void main(String[] args) {
+		AkashCalc obj1 =new AkashCalc();
+	    int result =obj1.add(25, 20);
+	    System.out.println(result);
+
+	}
+
+}

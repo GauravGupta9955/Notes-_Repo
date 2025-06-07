@@ -1,0 +1,47 @@
+package Static;
+
+import java.util.Scanner;
+
+class Farmer{
+	private float pa;
+	private float td;
+	private float si;
+	private float ri;
+	
+	public void acceptInput() {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("please enter the prioncipal amount");
+		pa=sc.nextFloat();
+		System.out.println("Please enter the time duration to repay");
+		td=sc.nextFloat();
+		ri=2.5f;
+		
+	}
+	public void compute() {
+		si=(pa*ri*td)/100;
+	}
+	public void display() {
+		System.out.println("SI is "+si);
+	}
+	
+}
+
+public class LaunchFarmer {
+
+	public static void main(String[] args) {
+      
+		
+		Farmer F1= new Farmer();
+		Farmer F2= new Farmer();
+		F1.acceptInput();
+		F1.compute();
+		F1.display();
+
+		
+		F2.acceptInput();
+		F2.compute();
+		F2.display();
+
+	}
+
+}

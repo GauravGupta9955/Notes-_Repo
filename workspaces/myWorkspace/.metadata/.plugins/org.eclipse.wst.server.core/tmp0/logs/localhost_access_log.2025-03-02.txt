@@ -1,0 +1,17 @@
+127.0.0.1 - - [02/Mar/2025:21:24:50 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:24:52 +0530] "GET /CookingSessionTrackingApp/form1.html HTTP/1.1" 200 550
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:24:52 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:24:59 +0530] "GET /CookingSessionTrackingApp/test1?pid=12345&pname=gaurav HTTP/1.1" 200 588
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:25:05 +0530] "GET /CookingSessionTrackingApp/test2?pquantity=12&pcost=12000 HTTP/1.1" 200 589
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:25:20 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 373
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:13 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:16 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:21 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:22 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:22 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:33 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:35 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:35 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:35 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:36 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [02/Mar/2025:21:26:40 +0530] "GET /CookingSessionTrackingApp/test3?man_date=02-02-5005&Exp_date=02-02-2009 HTTP/1.1" 200 394

@@ -1,0 +1,46 @@
+package mainQUestion;
+
+import java.util.Scanner;
+
+public class ToFindGCDofString {
+	public static void main(String[] args) {
+		String str="ABCABC";
+		String str1="ABABAB";
+		String largestString=gcdOfString(str,str1);
+		
+		System.out.println(largestString);
+	}
+
+	private static String gcdOfString(String str, String str1) {
+		// TODO Auto-generated method stub
+		String  largestSubstring1= largestSubstring(str);                                                                                                                                                                                                                                                                                                                                                                            
+		String largestSubstring2=largestSubstring(str1);
+		if(largestSubstring1.equalsIgnoreCase(largestSubstring2)) {
+        return largestSubstring1; 
+		}
+		
+		return "";
+	}
+	
+	private static String largestSubstring(String str1) {
+		// TODO Auto-generated method stub
+		
+		String current="",longest="";
+		
+		for(int i=0;i<str1.length();i++) {
+			if(current.contains(String.valueOf(str1.charAt(i))))
+				current=current.substring(current.indexOf(str1.charAt(i))+1);
+			
+			current=current+String.valueOf(str1.charAt(i));
+			
+			
+			if(longest.length()<current.length()) {
+				longest=new String(current);
+			}
+			
+		}
+		
+		return longest;	
+	}
+
+}

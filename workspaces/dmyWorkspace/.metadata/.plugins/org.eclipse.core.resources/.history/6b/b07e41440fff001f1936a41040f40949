@@ -1,0 +1,25 @@
+package in.gupta.testPractice;
+
+import java.util.Scanner;
+
+public class practiceQuestion1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		fabinocci(num);
+	}
+
+	private static void fabinocci(int num) {
+		int a=0,b=1,c=1,d=0;
+		
+		while(d<=num) {
+			a=b;
+			b=c;
+			c=a+b;
+			d++;
+		 System.out.print(a+ " ");
+		}
+		
+	}
+}

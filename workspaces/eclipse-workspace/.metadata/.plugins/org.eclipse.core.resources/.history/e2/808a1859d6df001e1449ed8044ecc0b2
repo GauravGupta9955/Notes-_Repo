@@ -1,0 +1,14 @@
+@FunctionalInterface
+interface Abc{
+	void show();
+}
+public class functionalInterface {
+	public static void main(String[] args) {
+		Abc obj =() -> {
+				System.out.println("in show");
+			
+		};
+		obj.show();
+	}
+
+}

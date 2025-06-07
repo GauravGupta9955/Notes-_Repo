@@ -1,0 +1,58 @@
+package codingquestion;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import StreamApi.employee123456;
+
+class employee123456{
+	int id;
+	String name;
+	public employee123456(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "employee123456 [id=" + id + ", name=" + name + "]";
+	}
+	
+}
+public class ToSortTheEmployeeaccordingtotheId {
+	public static void main(String[] args) {
+		
+	
+	ArrayList<employee123456> arr = new ArrayList<>();
+	arr.add(new employee123456(1,"gaurav gupta"));
+	arr.add(new employee123456(2,"gautam gupta"));
+	arr.add(new employee123456(3,"raju"));
+	arr.add(new employee123456(78,"raman gupta"));
+	arr.add(new employee123456(9,"ramu gupta"));
+	
+	Comparator<employee123456> cmp=(a,b)->a.id-b.id;
+	
+	Collections.sort(arr,cmp);
+	
+	for(employee123456 emp:arr) {
+		System.out.println(emp.getId()+":"+emp.getName());
+	}
+	
+	
+	
+
+	}
+}

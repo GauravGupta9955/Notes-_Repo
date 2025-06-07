@@ -1,0 +1,13 @@
+abstract class jeep{
+	public abstract void show();
+}
+public class AnonymousInnerClass {
+ public static void main(String[] args) {
+	 jeep A =new jeep()
+			 {
+		 public void show() {
+			 System.out.println("in a ne Show");
+		 }
+			 };
+}
+}

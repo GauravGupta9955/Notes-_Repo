@@ -1,0 +1,19 @@
+package StreamApi;
+
+public class ToCheckifthenoisArmstrong {
+	public static void main(String[] args) {
+		int arm=370;
+		
+		int digitCount=String.valueOf(arm).length();
+		
+		int num1=String.valueOf(arm)
+                .chars()
+                .map(Character::getNumericValue)
+                .map(digit -> (int) Math.pow(digit, digitCount))
+                .sum();
+		
+		System.out.println(digitCount);
+		System.out.println(num1);
+	}
+
+}

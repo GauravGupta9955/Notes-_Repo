@@ -1,0 +1,17 @@
+import java.util.*;
+public class Stack1 {
+public static void main(String[] args) {
+	Stack<String> animals =new Stack<String> ();
+	animals.push("Cow");
+	animals.push("cat");
+	animals.push("lion");
+	animals.push("Gorillea");
+	animals.push("chimpanzee");
+	Iterator it = animals.iterator();
+	
+	while(it.hasNext()) {
+		System.out.println(it.next());
+	}
+	
+}
+}

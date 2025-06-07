@@ -1,0 +1,15 @@
+package javavenger;
+
+public class hello {
+	public static void main(String args[]) {
+		int num1 =9;
+		byte by =127;
+		short sh =238;
+		long l=5673l;
+		float f=5.8f;
+		double d =5.8;
+		char c ='k';
+		boolean b = true;
+	}
+
+}

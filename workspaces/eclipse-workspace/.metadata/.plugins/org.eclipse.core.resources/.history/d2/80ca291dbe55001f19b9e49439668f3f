@@ -1,0 +1,36 @@
+package java8Feature;
+
+import java.util.*;
+
+class myComparator implements Comparator{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		// TODO Auto-generated method stub
+		return o1.hashCode()-o2.hashCode();
+	}
+	
+}
+
+public class lambdaWithCollection {
+public static void main(String[] args) {
+	ArrayList<Integer> l= new ArrayList();
+	l.add(20);
+	l.add(30);
+	l.add(40);
+	l.add(15);
+	l.add(89);
+	l.add(56);
+	System.out.println(l);
+	
+	Comparator com = new myComparator();
+	Collections.sort(l,com);
+	
+	for(int i :l) {
+		System.out.println(i);
+	}
+	
+	
+	
+}
+}

@@ -1,0 +1,18 @@
+package CodingQuestion;
+//Input="aabbccaazzaaghaa"
+//pattern -"aa"
+//number--4
+
+public class TogetoutputfromInput {
+	public static void main(String[] args) {
+		String input="aabbccaazzaaghaa";
+		int count=0;
+		for(int i=0;i<input.length();i++) {
+			if (input.substring(i,i+2).equals("aa"))
+				count++;
+		}
+		
+		System.out.println("no.of aa is "+count);
+	}
+
+}

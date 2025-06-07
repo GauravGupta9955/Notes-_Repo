@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class ArralList1 {
+public static void main(String[] args) {
+	List<String> cars =new ArrayList();
+	cars.add("Volvo");
+	cars.add("Mahindra");
+	cars.add("Ford");
+	cars.add("BMW");
+	cars.set(2, "BYD");
+	System.out.println(cars.contains("BYD"));
+	Collections.sort(cars);
+	for(String i:cars) {
+		System.out.println(i);
+	}
+	
+} 
+}

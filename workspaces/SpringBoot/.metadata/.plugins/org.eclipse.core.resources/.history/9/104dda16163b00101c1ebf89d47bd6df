@@ -1,0 +1,27 @@
+package com.JPA.test;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.JPA.test.entity.User;
+import com.JPA.test.repository.UserRepository;
+
+@SpringBootApplication
+public class BootJpaTestApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext context =SpringApplication.run(BootJpaTestApplication.class, args);
+		UserRepository userRepository=context.getBean(UserRepository.class);
+		User user = new User();
+		user.setCity("Ranchi");
+		user.setName("Gaurav");
+		user.setStatus("I an java devloper");
+		
+		User user1 = userRepository.save(user);
+		System.out.println(user1);
+		
+		 
+	}
+
+}

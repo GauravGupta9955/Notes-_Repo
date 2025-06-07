@@ -1,0 +1,28 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class InsertQuery {
+	public static void main(String[] args) throws SQLException {
+		String url="jdbc:mysql://localhost:3306/ineuron";
+		String id ="root";
+		String pass="Gaurav45";
+		Connection connection=DriverManager.getConnection(url,id,pass);
+		try {
+			if(connection!=null) {
+				Statement statement =connection.createStatement();
+				if(statement!=null) {
+					String querry ="";
+					if(statement!=null) {
+					int rows=statement.executeUpdate(querry);
+					}
+				}
+			}
+		}
+		catch(SQLException sq) {
+			sq.printStackTrace();
+		}
+	}
+
+}

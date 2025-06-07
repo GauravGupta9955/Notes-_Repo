@@ -1,0 +1,5 @@
+package Excepions;
+
+public enum Exception1 {
+
+}

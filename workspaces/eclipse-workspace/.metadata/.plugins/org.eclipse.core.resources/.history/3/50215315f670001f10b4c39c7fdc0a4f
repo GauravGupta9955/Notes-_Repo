@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Test1234  {
+	
+	
+	public static void main(String[] args) 
+	{
+		List <Integer> num = Arrays.asList(3,4,5,6,9,11,9,0);
+		Collections.sort(num);
+		System.out.println(num);
+		int sum =1;
+		int sum1 =1;
+	for(int n:num) {
+		sum =sum*n;
+		if(sum>sum1) {
+			sum1 =sum;
+		}
+	}
+	System.out.println(sum);	
+		
+		
+	}
+	
+
+	
+
+	
+}
+

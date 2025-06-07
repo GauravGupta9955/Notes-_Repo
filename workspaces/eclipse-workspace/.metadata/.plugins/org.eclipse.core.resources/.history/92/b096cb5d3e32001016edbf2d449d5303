@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+
+public class test349879674 {
+	public static void main(String[] args) {
+		
+		String s ="abcabcbb";
+		int length=s.length()-1;
+		
+		LinkedHashSet<Character> set = new LinkedHashSet<>();
+		
+		int start=0,end=0;
+		
+		while(end<=length) {
+			if(!set.contains(s.charAt(end))) {
+				set.add(s.charAt(end));
+				end++;
+			}
+			else {
+				set.remove(s.charAt(start));
+				start++;
+			}
+		}
+		
+		set.forEach(System.out::print);
+	}
+
+}

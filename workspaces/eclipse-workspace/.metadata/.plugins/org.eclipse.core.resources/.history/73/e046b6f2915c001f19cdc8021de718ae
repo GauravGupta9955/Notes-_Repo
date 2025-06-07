@@ -1,0 +1,9 @@
+enum Result{
+	PASS,FAIL,NR;
+}
+public class class1 {
+	public static void main(String[] args) {
+		Result r =Result.PASS;
+		System.out.println(r);
+	}
+}

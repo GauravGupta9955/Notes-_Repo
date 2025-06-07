@@ -1,0 +1,13 @@
+package javaString;
+
+public class String1 {
+	public static void main(String[] args) {
+		String s1= "Think Twice";
+		String s2 ="";
+		String [] s3=s1.split(s1);
+		
+		System.out.println(s3);
+		
+	}
+
+}

@@ -1,0 +1,44 @@
+import java.io.*;
+
+class Dog1 implements Serializable{
+	int a=6;
+	int b=8;
+	int c=9;
+}
+class Monkey implements Serializable{
+	int a=10;
+	int b=11;
+	int c=12;
+}
+class Rat1 implements Serializable{
+	int a=23;
+	int b=23;
+	int c=3;
+}
+public class serial4 {
+public static void main(String[] args) throws IOException, ClassNotFoundException {
+	Dog1 d = new Dog1();
+	Monkey m = new Monkey();
+	Rat1 r = new Rat1();
+	
+	FileOutputStream fos = new FileOutputStream("gsgds.ser");
+    ObjectOutputStream oos = new ObjectOutputStream(fos);
+    oos.writeObject(d);
+    oos.writeObject(m);
+    oos.writeObject(r);
+    
+    FileInputStream inos = new FileInputStream("C:\\Users\\gauta\\eclipse-workspace\\Serializations\\gsgds.ser");
+	ObjectInputStream ioos = new ObjectInputStream(inos);
+    Rat1 ha =(Rat1)ioos.readObject();
+    Dog1 da =(Dog1)ioos.readObject();
+    Monkey ma=(Monkey)ioos.readObject();
+    
+    System.out.println(ha.a +"====>"+ha.b+"==>"+ha.c);
+    System.out.println(da.a +"====>"+da.b+"==>"+da.c);
+    System.out.println(ma.a +"====>"+ma.b+"==>"+ma.c);
+    
+    
+    
+	
+}
+}

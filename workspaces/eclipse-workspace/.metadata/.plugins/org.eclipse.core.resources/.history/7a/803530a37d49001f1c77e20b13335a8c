@@ -1,0 +1,29 @@
+abstract class car{
+	public abstract void fly();//abstract method
+	public void drive() {
+		System.out.println("drive");
+	}
+	
+}
+
+class Rangerover extends car{
+
+	//abstract method implemented
+	public void fly() {
+		System.out.println("flying");
+		
+	}
+	
+	
+}
+public class AbstractMethod {
+	public static void main(String[] args) {
+		
+		car car=new Rangerover();  //upcasting or creating reference
+		                           //of absract class
+		car.fly();
+		car.drive();
+		
+	}
+
+}

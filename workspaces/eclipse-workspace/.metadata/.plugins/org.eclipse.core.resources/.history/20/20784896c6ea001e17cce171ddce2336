@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class priorityQue {
+
+
+	public static void main(String[] args) {
+		Queue<Integer> queue =new PriorityQueue<>();
+		queue.offer(12);//to insert the data
+		queue.offer(24);//to insert the data
+		queue.offer(36);//to insert the data
+		System.out.println(queue);
+		System.out.println(queue.poll());//to Remove the data
+		System.out.println(queue);
+		System.out.println(queue.peek());//to check which is next element
+	}
+
+}
+

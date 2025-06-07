@@ -1,0 +1,29 @@
+package Excepions;
+
+import java.util.Scanner;
+
+public class Exception2 {
+public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter the first number to divide");
+		int a = scan.nextInt();
+		System.out.println("enter the next number");
+		int b = scan.nextInt();
+		int res = a / b;
+		System.out.println("The result is " + res);
+		System.out.println("please enter the size of an Array");
+		int size =scan.nextInt();
+		int arr[] =new int[size];
+		System.out.println("please enter the element of an Array");
+		int elem =scan.nextInt();
+		System.out.println("Enter the position at which "
+				+ "element has to be inserted");
+		int pos =scan.nextInt();
+		arr[pos]=elem;	
+		System.out.println("Thanks for using application");
+
+
+	
+}
+}

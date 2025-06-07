@@ -1,0 +1,9 @@
+package mainQUestion;
+
+public class SortingTheStringAlphabetically {
+	public static void main(String[] args) {
+		String input ="ilovejava8";
+		String output=input.chars().sorted().toString();
+		System.out.println(output.toString());
+	}
+}

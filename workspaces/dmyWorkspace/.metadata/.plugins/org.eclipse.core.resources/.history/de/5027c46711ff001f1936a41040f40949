@@ -1,0 +1,37 @@
+package in.gupta.testPractice;
+
+import java.util.Scanner;
+
+public class practiceQuestion1 {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("enter the number");
+	int n =sc.nextInt();
+	
+	int rem ,sum=0,count=0, temp;
+	temp=n;
+	while (n>0) {
+		rem=n/10;
+		count++;
+     
+	}
+	n=temp;
+	
+	while (n!=0) {
+		rem=n%10;
+		sum =(int) (sum+Math.pow(rem, count));
+		n=n/10;
+	}
+	
+	if(temp==sum) {
+		System.out.println("the number is armstrong number");
+	}
+	else {
+		System.out.println("the number is not armstrong number");
+	}
+	
+	}
+
+	
+}

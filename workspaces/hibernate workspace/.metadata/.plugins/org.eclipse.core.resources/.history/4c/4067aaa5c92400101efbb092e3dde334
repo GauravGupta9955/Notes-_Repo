@@ -1,0 +1,19 @@
+package com.Telusko.Spring1;
+
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class Desktop implements Computer{
+	
+	public Desktop() {
+	   System.out.println("Desktop object created");
+	}
+
+	@Override
+	public void compile() {
+		// TODO Auto-generated method stub
+		System.out.println("Compiling through desktop");
+	}
+
+}

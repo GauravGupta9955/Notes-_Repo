@@ -1,0 +1,9 @@
+
+public class wrapChar {
+public static void main(String[] args) {
+	Character ch = Character.valueOf('c');
+	char cha =ch.charValue();
+	System.out.println(cha);
+	
+}
+}

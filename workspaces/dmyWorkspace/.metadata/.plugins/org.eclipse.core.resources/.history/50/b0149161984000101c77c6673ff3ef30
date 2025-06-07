@@ -1,0 +1,35 @@
+package StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+
+
+public class test1 {
+	public static void main(String[] args) {
+		
+	String []str = {"nat","bat","ate","eat","tea","tan"};
+	Map<Boolean,List<Integer>>map = Arrays.stream(str).
+			collect(Collectors.groupingBy(test1::sortedString));
+	
+	
+	}
+	
+	private String sortedString(String sort) {
+		char [] ch=sort.toCharArray();
+		Arrays.sort(ch);
+		return new String(ch);
+		
+	}
+	
+
+}

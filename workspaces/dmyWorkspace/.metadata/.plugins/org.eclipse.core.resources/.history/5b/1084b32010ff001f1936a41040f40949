@@ -1,0 +1,24 @@
+package in.gupta.testPractice;
+
+import java.util.Scanner;
+
+public class practiceQuestion1 {
+
+	public static void main(String[] args) {
+		String str ="Subbu123raj";
+		StringBuilder letter= new StringBuilder();
+		StringBuilder digit= new StringBuilder();
+		
+		for(char c :str.toCharArray()) {
+			if(Character.isDigit(c))
+				digit.append(c);
+			if(Character.isLetter(c))
+				letter.append(c);
+		}
+		
+		System.out.println(digit);
+		System.out.println(letter);
+	}
+
+	
+}

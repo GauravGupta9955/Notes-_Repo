@@ -1,0 +1,18 @@
+
+public class Wrapperclass {
+	public static void main(String[] args) {
+		int num =5;
+		Integer num1 =new Integer(num); //Boxing
+		Integer num2 =num; //AutoBoxing
+		
+		int num3 =num2.intValue();//unboxing
+		int num4 =num2;//AutoUnboxing;
+		
+		System.out.println("Boxing result::"+num1);
+		System.out.println("AutoBoxing result::"+num2);
+		System.out.println("UnBoxing result::"+num3);
+		System.out.println("AutoUnBoxing result::"+num4);
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package Config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.Telusko.Spring1.Desktop;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean(name="com")
+	public Desktop desktop() {
+		return new Desktop();
+	};
+
+}

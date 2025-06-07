@@ -1,0 +1,18 @@
+enum Results{
+	FAIL,PASS,NR;
+	int marks;
+	
+	Results(){
+		System.out.println("customer is getting called");
+	}
+	
+	void setMarks(int marks) {
+		this.marks=marks;
+	}
+	int getMarks() {
+		return marks;
+	}
+}
+public class class3 {
+
+}
